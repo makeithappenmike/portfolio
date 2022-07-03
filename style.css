@@ -1,10 +1,14 @@
 :root {
-    --featured-text-color: white;
+    --featured-text-color: rgb(0, 0, 0);
+}
+
+* {
+    font-family: "Gantari", sans-serif;
 }
 
 body {
     height: 1800px;
-    background-color: rgb(12, 140, 116);
+    background-color: rgb(255, 255, 255);
 }
 
 /* Handles mobile -- set for Main */
@@ -12,7 +16,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, 1);
     justify-content: center;
 }
 
@@ -45,7 +49,7 @@ input[type="checkbox"].toggle:checked + label {
 
 .nav {
     color: black;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,1);
     width: 100%;
     height: 50px;
     display: flex;
@@ -57,22 +61,25 @@ input[type="checkbox"].toggle:checked + label {
     align-items: center;
     display: inline;
     align-content: center;
+    padding: 20px;
+    letter-spacing: .2em;
 }
 
 .hero {
-    background-color: black;
+    background-color: rgb(204, 204, 204);
     width: 100%;
     max-height: 750px;
     position: relative;
     display: flex;
     margin: 10px;
-    border: 5px solid white;
     color: var(--featured-text-color);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .div-item {
     color: var(--featured-text-color);
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 500px;
     max-height: 250px;
     margin: 10px;
@@ -86,22 +93,24 @@ input[type="checkbox"].toggle:checked + label {
 .div-1 {
     width: 100%;
     max-height: 750px;
-    background-color: rgb(40, 131, 101);
+    background-color: rgba(230, 15, 15, 0.5);
+    color: rgb(0, 0, 0);
+    border: none;
 }
 
 .div-2 {
     /* min-height: 100px; */
-    background-color: rgb(3, 54, 37);
+    background-color: rgba(230, 15, 15, 0.5);
 }
 
 .div-3 {
     /* min-height: 100px; */
-    background-color: rgb(1, 24, 16);
+    background-color: rgba(230, 15, 15, 0.5);
 }
 
 .div-4 {
     /* min-height: 100px; */
-    background-color: rgb(1, 24, 16);
+    background-color: rgba(230, 15, 15, 0.5);
 }
 
 .featured {
@@ -111,7 +120,7 @@ input[type="checkbox"].toggle:checked + label {
 
 .footer {
     background-color: black;
-    color: white;
+    color: rgb(0, 0, 0);
     min-height: 100px;
     width: 100%;
     display: flex;
