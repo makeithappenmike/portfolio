@@ -1,3 +1,11 @@
+:root {
+    --featured-text-color: white;
+}
+
+body {
+
+}
+
 /* Handles mobile -- set for Main */
 .flex-container {
     display: flex;
@@ -38,6 +46,10 @@ input[type="checkbox"].toggle:checked + label {
     color: black;
     background-color: beige;
     width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-item {
@@ -46,29 +58,52 @@ input[type="checkbox"].toggle:checked + label {
     align-content: center;
 }
 
+.hero {
+    background-color: aqua;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
 .div-item {
-    color: black;
+    color: var(--featured-text-color);
     background-color: aquamarine;
     width: 500px;
     margin: 10px;
     border: 5px solid white;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div-1 {
-    color: black;
     min-height: 100px;
+    width: 100%;
     background-color: rgb(40, 131, 101);
 }
 
 .div-2 {
-    color: black;
     min-height: 100px;
     background-color: rgb(3, 54, 37);
 }
 
 .div-3 {
-    color: black;
     min-height: 100px;
     background-color: rgb(1, 24, 16);
+}
+
+.div-4 {
+    min-height: 100px;
+    background-color: rgb(1, 24, 16);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
 }
