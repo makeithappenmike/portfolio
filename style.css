@@ -1,9 +1,11 @@
 :root {
     --featured-text-color: rgb(0, 0, 0);
+    --theme-text-color: rgba(230, 15, 15, 0.5);
 }
 
 * {
     font-family: "Gantari", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -61,7 +63,7 @@ input[type="checkbox"].toggle:checked + label {
     align-items: center;
     display: inline;
     align-content: center;
-    padding: 20px;
+    padding: 1em;
     letter-spacing: .2em;
 }
 
@@ -93,29 +95,55 @@ input[type="checkbox"].toggle:checked + label {
 .div-1 {
     width: 100%;
     max-height: 750px;
-    background-color: rgba(230, 15, 15, 0.5);
+    background-color: var(--theme-text-color);
     color: rgb(0, 0, 0);
     border: none;
 }
 
-.div-2 {
+.feature-1 {
     /* min-height: 100px; */
-    background-color: rgba(230, 15, 15, 0.5);
+    background-color: var(--theme-text-color);
 }
 
-.div-3 {
+.feature-2 {
     /* min-height: 100px; */
-    background-color: rgba(230, 15, 15, 0.5);
+    background-color: var(--theme-text-color);
 }
 
-.div-4 {
+.feature-3 {
     /* min-height: 100px; */
-    background-color: rgba(230, 15, 15, 0.5);
+    background-color: var(--theme-text-color);
 }
 
 .featured {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lower_content {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    align-items: center;
+}
+
+.about {
+    background-color: var(--theme-text-color);
+    min-height: 250px;
+    width: 100%;
+}
+
+.work {
+    background-color: var(--theme-text-color);
+    min-height: 250px;
+    width: 100%;
+}
+
+.contact {
+    background-color: var(--theme-text-color);
+    min-height: 250px;
+    width: 100%;
 }
 
 .footer {
@@ -130,4 +158,17 @@ input[type="checkbox"].toggle:checked + label {
 
 .img {
     position: block;
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: rgb(162, 162, 162);
+    background-color: var(--theme-text-color);
+    border: 1px solid white;
+    border-radius: 1em;
 }
