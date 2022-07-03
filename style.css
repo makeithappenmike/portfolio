@@ -1,6 +1,10 @@
+/* Handles mobile -- set for Main */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    height: 500px;
+    background-color: red;
+    justify-content: center;
 }
 
 /* Toggle */
@@ -15,7 +19,7 @@ input[type="checkbox"].toggle {
 }
 
 input[type="checkbox"].toggle + label {
-    display: flex;
+    display: none; /* set to Flex */
 }
 
 input[type="checkbox"].toggle + label::before {
@@ -33,32 +37,38 @@ input[type="checkbox"].toggle:checked + label {
 .nav {
     color: black;
     background-color: beige;
+    width: 100%;
 }
 
-.div {
+.nav-item {
+    align-items: center;
+    display: inline;
+    align-content: center;
+}
+
+.div-item {
     color: black;
-    width: 600px;
-    height: 600px;
     background-color: aquamarine;
+    width: 500px;
+    margin: 10px;
+    border: 5px solid white;
+    
 }
 
 .div-1 {
     color: black;
-    width: 200px;
-    height: 200px;
+    min-height: 100px;
     background-color: rgb(40, 131, 101);
 }
 
 .div-2 {
     color: black;
-    width: 200px;
-    height: 200px;
+    min-height: 100px;
     background-color: rgb(3, 54, 37);
 }
 
 .div-3 {
     color: black;
-    width: 200px;
-    height: 200px;
+    min-height: 100px;
     background-color: rgb(1, 24, 16);
 }
