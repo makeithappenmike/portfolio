@@ -1,6 +1,6 @@
 :root {
-    --featured-text-color: rgb(0, 0, 0);
-    --div-visual-color: rgba(210, 123, 123, 0.5);
+    --main-text-color: rgb(0, 0, 0);
+    --main-bg-color: rgba(210, 123, 123, 0.5);
 }
 
 * {
@@ -10,7 +10,7 @@
 
 body {
     height: 1800px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     margin: auto;
 }
 
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 0, 0, 1);
     justify-content: center;
 }
 

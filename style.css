@@ -1,6 +1,8 @@
 :root {
-    --featured-text-color: rgb(0, 0, 0);
-    --div-visual-color: rgba(210, 123, 123, 0.5);
+    --main-text-color: rgb(0, 0, 0);
+    --main-bg-color: rgba(255, 255, 255, 1);
+    --overlay-text-color: rgba(255, 255, 255, 1);
+    --overlay-bg-color: rgba(0, 0, 0, .1);
 }
 
 * {
@@ -50,8 +52,8 @@ input[type="checkbox"].toggle:checked + label {
 }
 
 .nav {
-    color: black;
-    background-color: rgba(255,255,255,1);
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
     width: 100%;
     height: 50px;
     display: flex;
@@ -70,7 +72,7 @@ input[type="checkbox"].toggle:checked + label {
 }
 
 .hero {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--main-bg-color);
     /* background-image: url("assets/images/hero-background.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
@@ -79,16 +81,15 @@ input[type="checkbox"].toggle:checked + label {
     height: 750px;
     position: relative;
     display: flex;
-    color: black;
+    color: var(--main-text-color);
     flex: 1 1 100%;
     flex-shrink: 2;
     margin: auto;
-    color: white;
 }
 
 .div-item {
-    color: black;
-    background-color: rgb(255, 255, 255);
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
     width: 500px;
     max-height: 250px;
     display: flex;
@@ -100,8 +101,7 @@ input[type="checkbox"].toggle:checked + label {
 .div-1 {
     width: 100%;
     max-height: 750px;
-    background-color: rgba(255, 255, 255, .1);
-    color: black;
+    color: var(--main-text-color);
 }
 
 .featured {
@@ -113,7 +113,7 @@ input[type="checkbox"].toggle:checked + label {
 .feature-1,
 .feature-2,
 .feature-3 {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: var(--overlay-bg-color);
     border: 2px solid white;
     height: 150px;
     margin: 5px;
@@ -135,25 +135,25 @@ input[type="checkbox"].toggle:checked + label {
 }
 
 .about {
-    background-color: rgba(0, 0, 0, .04);
+    background-color: var(--overlay-bg-color);
     min-height: 250px;
     width: 100%;
 }
 
 .work {
-    background-color: rgba(0, 0, 0, .04);
+    background-color: var(--overlay-bg-color);
     min-height: 250px;
     width: 100%;
 }
 
 .contact {
-    background-color: rgba(0, 0, 0, .06);
+    background-color: var(--overlay-bg-color);
     min-height: 250px;
     width: 100%;
 }
 
 .footer {
-    background-color: white;
+    background-color: var(--main-bg-color);
     color: black;
     min-height: 100px;
     width: 100%;
@@ -176,7 +176,7 @@ input[type="checkbox"].toggle:checked + label {
 }
 
 a, a:visited {
-    color: black;
+    color: var(--main-text-color);
     text-decoration: none;
 
 }
