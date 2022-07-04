@@ -2,7 +2,7 @@
     --main-text-color: rgb(0, 0, 0);
     --main-bg-color: rgba(255, 255, 255, 1);
     --overlay-text-color: rgba(255, 255, 255, 1);
-    --overlay-bg-color: rgba(0, 0, 0, .1);
+    --overlay-bg-color: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -12,7 +12,7 @@
 
 body {
     height: 1800px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--main-bg-color);
     margin: auto;
 }
 
@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: var(--main-bg-color);
     justify-content: center;
 }
 
@@ -154,7 +154,7 @@ input[type="checkbox"].toggle:checked + label {
 
 .footer {
     background-color: var(--main-bg-color);
-    color: black;
+    color: var(--main-text-color);
     min-height: 100px;
     width: 100%;
     display: flex;
