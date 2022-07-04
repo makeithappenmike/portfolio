@@ -80,8 +80,6 @@ input[type="checkbox"].toggle:checked + label {
     position: relative;
     display: flex;
     color: var(--featured-text-color);
-    /* border-top: 1px solid black;
-    border-bottom: 1px solid black; */
     flex: 1 1 100%;
     flex-shrink: 2;
     margin: auto;
@@ -93,14 +91,10 @@ input[type="checkbox"].toggle:checked + label {
     background-color: rgb(255, 255, 255);
     width: 500px;
     max-height: 250px;
-    /* margin: 10px; */
-    /* border: 5px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border-top: 1px solid black; */
-    /* border-bottom: 1px solid black; */
 }
 
 .div-1 {
@@ -119,7 +113,6 @@ input[type="checkbox"].toggle:checked + label {
 .feature-1,
 .feature-2,
 .feature-3 {
-    /* min-height: 100px; */
     background-color: rgba(0, 0, 0, .1);
     border: 2px solid white;
     height: 150px;
@@ -142,12 +135,9 @@ input[type="checkbox"].toggle:checked + label {
 }
 
 .about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    width: 1200px;
+    background-color: rgba(0, 0, 0, .04);
+    min-height: 250px;
+    width: 100%;
 }
 
 .work {
