@@ -83,6 +83,7 @@ input[type="checkbox"].toggle:checked + label {
 }
 
 .featured {
+    background-color: rgba(255, 255, 255, 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -96,11 +97,12 @@ input[type="checkbox"].toggle:checked + label {
     background-color: var(--featured-bg-color);
     color: var(--main-text-color);
     border: 2px solid white;
-    width: 600px;
+    min-width: 350px;
     height: 100px;
     transition: .2s ease-in-out;
     padding: 15px;
     flex: 1 1 0%;
+    overflow: hidden;
 }
 
 .feature-1:hover,
@@ -112,6 +114,7 @@ input[type="checkbox"].toggle:checked + label {
 
 .feature-title {
     text-align: center;
+    margin-top: 1.5em;
 }
 
 .feature-text {
