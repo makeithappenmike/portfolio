@@ -162,9 +162,9 @@ input[type="checkbox"].toggle:checked + label {
     align-items: center;
 }
 
-.img {
+/* .img {
 
-}
+} */
 
 .self {
     max-height: 75%;
