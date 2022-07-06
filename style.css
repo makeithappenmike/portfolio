@@ -2,8 +2,8 @@
     --main-text-color: rgb(0, 0, 0);
     --main-bg-color: rgba(255, 255, 255, 1);
     --overlay-text-color: rgba(255, 255, 255, 1);
-    --featured-bg-color: rgb(239, 33, 33);
-    --section-bg-color: rgb(238, 146, 146);
+    --featured-bg-color: rgba(0, 0, 0, .5);
+    --section-bg-color: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -83,7 +83,6 @@ input[type="checkbox"].toggle:checked + label {
 }
 
 .featured {
-    background-color: rgba(255, 255, 255, 0);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -95,7 +94,7 @@ input[type="checkbox"].toggle:checked + label {
 .feature-2,
 .feature-3 {
     background-color: var(--featured-bg-color);
-    color: var(--main-text-color);
+    color: var(--overlay-text-color);
     border: 2px solid white;
     min-width: 350px;
     height: 100px;
@@ -109,7 +108,8 @@ input[type="checkbox"].toggle:checked + label {
 .feature-2:hover,
 .feature-3:hover {
     flex-basis: 15%;
-    height: 100%;    
+    height: 100%;
+    max-height: 250px; 
 }
 
 .feature-title {
@@ -121,19 +121,38 @@ input[type="checkbox"].toggle:checked + label {
     margin-top: 4em;
 }
 
+.other {
+    background-color: var(--section-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+}
+
 .about,
 .work,
 .contact {
-    background-color: var(--section-bg-color);
+    border: 1px solid rgb(243, 243, 243);
+    border-radius: 1em;
     color: var(--main-text-color);
     width: 100%;
     height: 250px;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    }
+
+.about h1,
+.work h1,
+.contact_form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 
 .footer {
     background-color: var(--main-bg-color);
