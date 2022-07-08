@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="style_dark_mode.css"> -->
     <!-- <link rel="stylesheet" href="style_pride_mode.css"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline" rel="stylesheet">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
+<!-- Begin Body -->
 <body>
+
+    <!-- Begin Header -->
     <header class="header">
-        <nav class="nav font-effect-outline">
+        <nav class="nav">
             <ul>
                 <li class="nav-item"><a href="#" alt="home">HOME</a></li>
                 <li class="nav-item"><a href="#about" alt="about">ABOUT</a></li>
@@ -29,55 +27,88 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Begin Main -->
     <main class="flex-container">
+
+        <!-- Begin Hero -->
         <section id="hero" class="hero">
-                <h1 class="font-effect-outline">MICHAEL MARTENS</h1>
-                <img src="assets/images/man.png" alt="Michael Martens"/>
+                <!-- <h1 class="">MICHAEL MARTENS</h1> -->
+                <img src="assets/images/hero_bg.jpg" alt="Michael Martens"/>
         </section>
-        <section id="featured" class="featured">
-            <div id="feature-1" class="feature-1 font-effect-outline">
-                <img src="assets/images/tooling.png" alt="tooling" />
-                <h1 class="feature-title">TOOLING</h1>
-                <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
-            </div>
-            <div id="feature-2" class="feature-2 font-effect-outline">
-                <img src="assets/images/scripts.png" alt="scripts" />
-                <h1 class="feature-title">SCRIPTS</h1>
-                <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
-            </div>
-            <div id="feature-3" class="div-item feature-3 font-effect-outline">
-                <img src="assets/images/web.jpeg" alt="web" />
-                <h1 class="feature-title">FRONT END</h1>
-                <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
-            </div>
-        </section>
+
+        <!-- Begin Other -->
         <section class="other">
+
+            <!-- Begin About -->
             <section id="about" class="about">
-                <section id="about_left" class="about_left">
-                    <h1>WHAT I DO</h1>
-                    <p class="about-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
-                </section>
-                <section id="about_right" class="about_right">
-                    <h1>WHY I DO IT</h1>
-                    <p class="about-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
-                </section>
+                <div id="feature" class="feature">
+                    <img src="assets/images/tooling.png" alt="tooling" />
+                    <h1 class="feature-title">WHAT I DO</h1>
+                    <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text.Hidden text. </p>
+                </div>
             </section>
-            <section id="work" class="work">
-                <h1>WORK</h1>
+
+        </section>
+
+        <!-- Begin featured -->
+        <section id="featured" class="featured">
+        
+             <!-- Begin Other -->
+            <section class="other">
+
+                <!-- Begin Tooling -->
+                <div id="tooling" class="feature">
+                    <img src="assets/images/tooling.png" alt="tooling" />
+                    <h1 class="feature-title">TOOLING</h1>
+                    <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
+                </div>
+
+                <!-- Begin Scripts -->
+                <div id="scripts" class="feature">
+                    <img src="assets/images/scripts.png" alt="scripts" />
+                    <h1 class="feature-title">SCRIPTS</h1>
+                    <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
+                </div>
+
+                <!-- Begin Front End -->
+                <div id="front_end" class="feature">
+                    <img src="assets/images/web.jpeg" alt="web" />
+                    <h1 class="feature-title">FRONT END</h1>
+                    <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
+                </div>
+
+            <!-- End Other -->
             </section>
-            <section id="contact" class="contact">
+
+            <!-- Begin About -->
+            <section class="other">
+                <div id="feature-2" class="feature">
+                    <img src="assets/images/scripts.png" alt="scripts" />
+                    <h1 class="feature-title">WHY I DO IT</h1>
+                    <p class="feature-text">Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. Hidden text. Hidden text.Hidden text.Hidden text.Hidden text. </p>
+                </div>
+            </section>
+
+             <!-- Begin Contact -->
+             <section class="contact">
                 <form id="contact" class="contact_form">
                     <h1>GET IN TOUCH</h1>
                     <label for="EMAIL" class="form_label">EMAIL</label>
                     <input type="text" class="input" aria-label="EMAIL">
                 </form>
             </section>
+        
+        <!-- End Featured -->
         </section>
+
+        <!-- Begin Footer -->
         <footer class="footer">
             <section class="footer-content">
             <h1>FOOTER</h1>
             </section>
         </footer>
+
     </main>
 </body>
 </html>
