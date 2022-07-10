@@ -281,9 +281,7 @@ form {
     }
 
     .body {
-        -webkit-background-attachement: fixed;
-        -moz-background-attachement: fixed;
-        -o-background-attachement: fixed;
+        background-attachment: scroll;
     }
 
 }
