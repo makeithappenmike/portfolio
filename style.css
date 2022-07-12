@@ -194,8 +194,8 @@ h1 {
     align-items: center;
     background-color: black;
     width: 100%;
-    min-height: 250px;
-    padding: 50px;
+    /* min-height: 250px; */
+    padding: 25px;
     color: white;
     font-size: .5em;
 }
@@ -218,6 +218,10 @@ h1 {
     filter: invert(100%);
 }
 
+.emailme {
+    font-size: 500%;
+}
+
 .nav-image {
     max-width: 50px;
 }
@@ -228,9 +232,14 @@ a, a:visited {
 
 }
 
-a:hover {
+nav a:hover {
     color: rgba(69, 166, 179, 0.5);
     text-decoration: line-through 0.15em rgba(0, 0, 0, .5);
+}
+
+.emailme:hover {
+    font-size: 500%;
+    text-decoration: none;
 }
 
 .contact h1 {
