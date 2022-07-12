@@ -13,8 +13,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     height: 1800px;
-    background-color: var(--main-bg-color);
+    background-color: black;
     margin: 0px;
+    width: 100vw;
     background-image: url("assets/images/hero_bg.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -30,11 +31,19 @@ body {
     width: 100vw;
 }
 
+.nav {
+    vertical-align: middle;
+    align-items: center;
+}
+
 .flex-nav {
     font-family: 'Roboto', sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    width: 100vw;
+    margin-top: -50px;
+    margin-right: 5px;
 }
 
 .nav-item {
@@ -43,12 +52,6 @@ body {
     flex-wrap: wrap;
     padding:15px 30px 5px 30px;
     color: white;
-}
-
-.nav-item img {
-    filter: invert(100%);
-    transform: scale(2);
-    padding:15px 30px 5px 30px;
 }
 
 .hero {
@@ -83,6 +86,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     flex: 1 1 0%;
+    width: 100vw;
 }
 
 .app {
@@ -92,7 +96,7 @@ body {
     border-radius: .7em;
     min-height: 200px;
     min-width: 200px;
-    width: 100%;
+    width: 100vw;
     padding: 15px;
     flex: 1 0 0%;
     margin: 40px;
@@ -170,7 +174,7 @@ h1 {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100vw;
     max-width: 100vw;
     position: relative;
 }
@@ -192,10 +196,10 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: black;
-    width: 100%;
-    /* min-height: 250px; */
-    padding: 25px;
+    width: 100vw;
+    /* padding: 25px; */
     color: white;
     font-size: .5em;
 }
@@ -205,10 +209,11 @@ h1 {
     border-top: 2px solid white;
     color: var(--main-text-color);
     text-align: center;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: .7em;
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 100%;
 }
 
@@ -220,10 +225,17 @@ h1 {
 
 .emailme {
     font-size: 500%;
+    padding-bottom: 15px;
 }
 
 .nav-image {
+    /* width: 100%; */
     max-width: 50px;
+    filter: invert(100%);
+    transform: scale(2);
+    padding: 15px 30px 5px 30px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 a, a:visited {
@@ -248,40 +260,27 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
     text-shadow: 2px 2px 3px #000000;
-}
-
-input {
-    min-width: 100px;
-    width: 100%;
-    height: 25px;
-    border-radius: .7em;
-    border-width: .1em;
-    margin-bottom: 5px;
-}
-
-form {
-    width: 100%;
-    min-width: 200px;
-    max-width: 500px;
-}
-
-.message {
-    min-height: 100px;
+    width: 100vw;
 }
 
 @media screen and (max-width: 1000px) {
     .flex-nav {
         flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.5);
-        width: 150px;
-        padding-bottom: 10px;
+        /* background-color: rgba(255, 255, 255, 0.5); */
+        width: 100%;
+        align-items: flex-end;
+        margin-top: -55px;
+        /* padding-bottom: 10px; */
     }
 
-    .nav-image {
+    /* .nav-image {
         position: absolute;
         top: 0px;
-        right: 10px;
-    }
+        right: 100px;
+        filter: invert(100%);
+        transform: scale(2);
+        /* padding: 15px 30px 5px 30px; */
+    } */
 
     .about {
         padding-left: 5%;
@@ -289,14 +288,12 @@ form {
     }
 
     body {
-        /* background-attachment: scroll; */
         background-image: url("assets/images/hero_bg.jpg");
         background-attachment: fixed;
         background-size: 50%;
         background-position: top;
         background-repeat: no-repeat;
         background-size: auto;
-        background;
     }
 
-}
+
