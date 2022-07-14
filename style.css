@@ -209,8 +209,8 @@ h1 {
     border-top: 2px solid white;
     color: var(--main-text-color);
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: .7em;
     display: block;
     width: 100vw;
@@ -218,7 +218,7 @@ h1 {
 }
 
 .footer img {
-    max-height: 50px;
+    max-height: 30px;
     vertical-align: middle;
     filter: invert(100%);
 }
@@ -245,7 +245,7 @@ a, a:visited {
 
 nav a:hover {
     color: rgba(69, 166, 179, 0.5);
-    text-decoration: line-through 0.15em rgba(0, 0, 0, .5);
+    text-decoration: line-through 0.15em rgba(179, 69, 69, .5);
 }
 
 .emailme:hover {
