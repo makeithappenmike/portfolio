@@ -152,6 +152,7 @@ h1 {
     align-items: center;
 }
 
+/* This is where we're inverting the logo from black to white */
 .about img {
     filter: invert(100%);
     position: relative;
