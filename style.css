@@ -1,11 +1,13 @@
+/* Sets variables for common values */
 :root {
     --main-text-color: rgb(255, 255, 255);
-    --main-bg-color: rgb(255, 255, 255);
-    --overlay-text-color: rgb(0, 0, 0);
-    --featured-bg-color: rgba(0, 0, 0, .5);
-    --section-bg-color: rgba(255, 255, 255, 1);
+    --text-shadow: 2px 2px 3px #000000;
+    --double-border: 3px double white;
+    --red-gradient: linear-gradient(rgb(179, 69, 69), rgb(0, 0, 0));
+    --blue-gradient: linear-gradient(rgb(69, 166, 179), rgb(0, 0, 0));
 }
 
+/* This makes ancho jumps like butter */
 * {
     scroll-behavior: smooth;
 }
@@ -51,7 +53,7 @@ body {
     list-style: none;
     flex-wrap: wrap;
     padding:15px 30px 5px 30px;
-    color: white;
+    color: var(--main-text-color);
 }
 
 .hero {
@@ -66,19 +68,19 @@ body {
 
 .hero-text h1 {
     margin-top: -200px;
-    color: white;
+    color: var(--main-text-color);
     font-size: 5rem;
     text-align: center;
     max-width: 100%;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: var(--text-shadow);
 }
 
 .hero-text p {
-    color: white;
+    color: var(--main-text-color);
     text-align: center;
     font-size: 2rem;
     padding-top: 2rem;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: var(--text-shadow);
 }
 
 .featured {
@@ -90,9 +92,9 @@ body {
 }
 
 .app {
-    background-image: linear-gradient(rgb(69, 166, 179), rgb(0, 0, 0));
-    color: white;
-    border-top: 3px double white;
+    background-image: var(--blue-gradient);
+    color: var(--main-text-color);
+    border-top: var(--double-border);
     border-radius: .7em;
     min-height: 200px;
     min-width: 200px;
@@ -110,6 +112,10 @@ h1 {
     font-size: 200%;
 }
 
+.app-one {
+    flex-basis: 50%;
+}
+
 .about-title,
 .app-one-title,
 .app-two-title,
@@ -118,7 +124,7 @@ h1 {
     margin-top: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: var(--text-shadow);
 }
 
 .about-title {
@@ -133,7 +139,7 @@ h1 {
     border-bottom: 3px double white;
     position: relative;
     display: flex;
-    color: white;
+    color: var(--main-text-color);
     min-height: 200px;
     width: 100%;
     padding-left: 10%;
@@ -179,11 +185,8 @@ h1 {
     position: relative;
 }
 
-.app-one {
-    flex: 2 1 100%;
-}
-
 .other-top {
+    /* Gives a smooth transition out of BG images into black */
     background-image: linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0, .5), rgba(0, 0, 0, 1));
     display: flex;
     flex-wrap: wrap;
@@ -199,14 +202,13 @@ h1 {
     justify-content: center;
     background-color: black;
     width: 100vw;
-    /* padding: 25px; */
-    color: white;
+    color: var(--main-text-color);
     font-size: .5em;
 }
 
 .footer {
-    background-image: linear-gradient(rgb(179, 69, 69), rgb(0, 0, 0));
-    border-top: 2px solid white;
+    background-image: var(--red-gradient);
+    border-top: var(--double-border);
     color: var(--main-text-color);
     text-align: center;
     padding-top: 15px;
@@ -228,8 +230,12 @@ h1 {
     padding-bottom: 15px;
 }
 
+.dare {
+    font-size: 150%;
+    padding-bottom: 15px;
+}
+
 .nav-image {
-    /* width: 100%; */
     max-width: 50px;
     filter: invert(100%);
     transform: scale(2);
@@ -239,7 +245,7 @@ h1 {
 }
 
 a, a:visited {
-    color: white;
+    color: var(--main-text-color);
     text-decoration: none;
 }
 
@@ -259,28 +265,18 @@ nav a:hover {
     font-size: 400%;
     font-family: 'Roboto', sans-serif;
     font-weight: 800;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: var(--text-shadow);
     width: 100vw;
 }
 
+/* Handles screens sized less than 1000px */
 @media screen and (max-width: 1000px) {
     .flex-nav {
         flex-direction: column;
-        /* background-color: rgba(255, 255, 255, 0.5); */
         width: 100%;
         align-items: flex-end;
         margin-top: -55px;
-        /* padding-bottom: 10px; */
     }
-
-    /* .nav-image {
-        position: absolute;
-        top: 0px;
-        right: 100px;
-        filter: invert(100%);
-        transform: scale(2);
-        /* padding: 15px 30px 5px 30px; */
-    } */
 
     .about {
         padding-left: 5%;
@@ -295,5 +291,32 @@ nav a:hover {
         background-repeat: no-repeat;
         background-size: auto;
     }
+
+}
+
+/* Handles screens sized less than 310px */
+@media screen and (max-width: 310px) {
+    .nav-item {
+        margin-right: -20px;
+    }
+
+    .hero-text h1 {
+        margin-top: -200px;
+        color: var(--main-text-color);
+        font-size: 4rem;
+        text-align: center;
+        max-width: 100%;
+        text-shadow: var(--text-shadow);
+    }
+    
+    .hero-text p {
+        color: var(--main-text-color);
+        text-align: center;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        text-shadow: var(--text-shadow);
+    }
+
+}
 
 
