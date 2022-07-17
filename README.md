@@ -14,3 +14,5 @@ Contributions by Michael Martens
 Screenshot:
 
 <img src="assets/images/screenshot.png" alt="screenshot of portfolio" />
+<br>
+<img src="assets/images/apps_screenshot.png" alt="screenshot of portfolio" />
