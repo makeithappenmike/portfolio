@@ -87,7 +87,25 @@ body {
     width: 100%;
 }
 
-.app {
+.app-one {
+    background-image: var(--red-gradient);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: var(--main-text-color);
+    border-top: var(--double-border);
+    border-radius: .7em;
+    min-height: 200px;
+    min-width: 200px;
+    width: 100%;
+    padding: 15px;
+    flex: 1 0 0%;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.app-two, .app-three {
     background-image: var(--blue-gradient);
     color: var(--main-text-color);
     border-top: var(--double-border);
